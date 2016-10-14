@@ -101,6 +101,45 @@ def cool_r():
 
   return blue_red1
 
+# from Callies
+def blues():
+
+  cdict = {
+    'red': ((0.0, 0.0, 0.0), 
+            (0.5, 0.216, 0.216), 
+            (1.0, 1.0, 1.0)),
+
+    'green': ((0.0, 0.0, 0.0), 
+              (0.5, 0.494, 0.494), 
+              (1.0, 1.0, 1.0)),
+
+    'blue': ((0.0, 0.0, 0.0), 
+             (0.5, 0.722, 0.722), 
+             (1.0, 1.0, 1.0))}
+  cm_blues = LinearSegmentedColormap('blues', cdict, 256)
+
+  return cm_blues
+
+
+def blues_r():
+
+  cdict = {
+    'red': ((0.0, 1.0, 1.0), 
+            (0.5, 0.216, 0.216), 
+            (1.0, 0.0, 0.0)),
+
+    'green': ((0.0, 1.0, 1.0), 
+              (0.5, 0.494, 0.494), 
+              (1.0, 0.0, 0.0)),
+
+    'blue': ((0.0, 1.0, 1.0), 
+             (0.5, 0.722, 0.722), 
+             (1.0, 0.0, 0.0))}
+  cm_blues = LinearSegmentedColormap('blues_r', cdict, 256)
+
+  return cm_blues
+
+
 # def cool_r():
 #   return reverse_colourmap(cool)
 
